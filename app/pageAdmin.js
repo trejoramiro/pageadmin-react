@@ -14,6 +14,7 @@ class PageAdmin extends React.Component{
       "pages" : this.props.backend.getAll()
     });
   }
+  
   render() {
     return <ol> {
       this.state.pages.map( function(page) {
