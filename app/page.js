@@ -2,6 +2,7 @@ import React from "react";
 import PageEditor from "./pageEditor"
 import PageView from "./pageView"
 
+
 export default class Page extends React.Component {
 
   constructor(props) {
@@ -17,7 +18,7 @@ export default class Page extends React.Component {
               onCancel={this.onCancel.bind(this)}/>;
     } else {
       return <PageView {...this.props}
-              onPageEdit={this.onEdit().bind(this)}/>;
+              onPageEdit={this.onEdit.bind(this)}/>;
     }
   }
 
