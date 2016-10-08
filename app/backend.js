@@ -27,7 +27,7 @@ class Backend {
   }
 
   update(id, property, value) {
-    this.updates.push([id,proprty,value]);
+    this.updates.push([id, proprty, value]);
   }
 
   delete(id) {

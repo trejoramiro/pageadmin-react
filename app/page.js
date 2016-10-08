@@ -18,19 +18,21 @@ export default class Page extends React.Component {
               onCancel={this.onCancel.bind(this)}/>;
     } else {
       return <PageView {...this.props}
-              onPageEdit={this.onEdit.bind(this)}/>;
+              onEdit={this.onEdit.bind(this)}/>;
     }
   }
 
   onEdit() {
+    console.log("hello")
     this.setState({
       "isEditing": true
-    })
+    });
   }
 
   onCancel() {
     this.setState({
       "isEditing": false
-    })
+    });
   }
+
 }
