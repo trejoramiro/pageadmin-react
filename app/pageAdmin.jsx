@@ -20,7 +20,7 @@ class PageAdmin extends Component {
 
   render() {
     return <ol> {
-      this.state.pages.map( function(page) {
+      this.state.pages.map( (page) => {
         return <li key={page.id}> <Page {...page}
                                     onUpdate={this.onUpdate}
                                     onDelete={this.onDelete}
